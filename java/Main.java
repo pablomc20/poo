@@ -4,10 +4,15 @@ class Main {
         Account account = new Account("Pablo", "CUMP970324");
         Car car = new Car("AMQ123", account);
         car.passenger = 2;
-        car.printDataCar();
-        // System.out.println(car.driver);
-        UberX uberx = new UberX("AMD567", new Account("Pablo", "CUMP67542637"), "nise ", "YAMAHA");
+        // car.printDataCar();
+        
+        Driver driver = new Driver("Joaquín", "JOA3256", 3);
+        
+        UberX uberx = new UberX("AMD567", driver, "VW", "Bochito");
         uberx.showDetails();
-        uberx.printDataCar();
+        // uberx.printDataCar();
+
+        User user = new User("David", "DAV9867429", 30);
+        user.greeting();
     }
 }

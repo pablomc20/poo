@@ -1,12 +1,14 @@
 from car import Car
 from account import Account
+from driver import Driver
+from user import User
 
 if __name__ == "__main__":
-    print("Hola mundo desde python")
+    driver = Driver("Pablo", "CUMP970324", 4)
 
-    car = Car("AMD123", Account("Pablo", "CUMP970324"))
+    car = Car("AMD1523", driver)
     car.passenger = 8
+    car.printDataCar()
 
-
-    print(vars(car))
-    print(vars(car.driver))
+    user = User("Juanito", "JUAN76584729", 40)
+    user.greeting()

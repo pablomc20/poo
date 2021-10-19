@@ -9,7 +9,7 @@ class UberX extends Car{
     }
 
     void showDetails() {
-        System.out.println("Conductor:" + this.driver.name);
+        System.out.println("Conductor:" + this.driver.name + " con curp " + this.driver.document);
         System.out.println("Marca:" + this.brand);
         System.out.println("Modelo:" + this.model);
     }
